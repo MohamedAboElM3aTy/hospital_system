@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Reservation</title>
+</head>
+<body>
+  <h2>Reservation</h2>
+  <form action="reservation.php" method="POST">
+    <label for="patientName">Patient Name:</label>
+    <input type="text" id="patientName" name="patientName" required>
+    <br><br>
+    <label for="doctorSpecialization">Doctor Specialization:</label>
+    <select id="doctorSpecialization" name="doctorSpecialization">
+      <option value="cardiology">Cardiology</option>
+      <option value="dermatology">Dermatology</option>
+      <option value="endocrinology">Endocrinology</option>
+      <option value="gastroenterology">Gastroenterology</option>
+      <option value="neurology">Neurology</option>
+      <option value="orthopedics">Orthopedics</option>
+      <option value="pediatrics">Pediatrics</option>
+      <option value="urology">Urology</option>
+    </select>
+    <br><br>
+    <label for="appointmentDate">Appointment Date:</label>
+    <input type="date" id="appointmentDate" name="appointmentDate" required>
+    <br><br>
+    <label for="appointmentTime">Appointment Time:</label>
+    <select id="appointmentTime" name="appointmentTime">
+      <option value="09:00">09:00</option>
+      <option value="10:00">10:00</option>
+      <option value="11:00">11:00</option>
+      <option value="14:00">12:00</option>
+      <option value="15:00">1:00</option>
+      <option value="16:00">2:00</option>
+    </select>
+    <br><br>
+    <input type="submit" name="Save" value="Make Reservation">
+  </form>
+
+  <style>
+    body
+    {
+      background-image: url(images/pic14.avif);
+      height: 100vh;
+      background-position: center;
+      background-size: cover;
+    }
+  </style>
+</body>
+</html>

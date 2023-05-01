@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Online Payment</title>
+</head>
+<body>
+  <h2>Online Payment</h2>
+  <form action="payment.php" method="POST">
+    <label for="cardNumber">Card Number:</label>
+    <input type="text" id="cardNumber" name="cardNumber" required>
+    <br><br>
+    <label for="cardHolderName">Card Holder Name:</label>
+    <input type="text" id="cardHolderName" name="cardHolderName" required>
+    <br><br>
+    <label for="expirationDate">Expiration Date:</label>
+    <input type="text" id="expirationDate" name="expirationDate" required>
+    <br><br>
+    <label for="cvv">CVV:</label>
+    <input type="text" id="cvv" name="cvv" placeholder="123" required>
+    <br><br>
+    <label for="amount">Amount:</label>
+    <input type="text" id="amount" name="amount" required>
+    <br><br>
+    <input type="submit" value="Make Payment">
+  </form>
+<style>
+    body
+    {
+      background-image: url(images/pic16.avif);
+        height: 100vh;
+        background-position: center;
+        background-size: cover;
+    }
+</style>
+</body>
+</html>
